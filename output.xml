@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.5 on win32)" generated="20220527 17:10:29.436" rpa="false" schemaversion="3">
+<suite id="s1" name="Tc1" source="C:\Users\Kushal Raju\PycharmProjects\Robot framework\TestCases\Tc1.robot">
+<test id="s1-t1" name="TestCase" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220527 17:10:29.732" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.co.in'.</msg>
+<status status="PASS" starttime="20220527 17:10:29.731" endtime="20220527 17:10:35.447"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220527 17:10:35.451" endtime="20220527 17:10:35.585"/>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220527 17:10:35.586" endtime="20220527 17:10:36.396"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>robotframework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220527 17:10:36.401" level="INFO">Typing text 'robotframework' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220527 17:10:36.401" endtime="20220527 17:10:36.719"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20220527 17:10:36.720" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220527 17:10:36.720" endtime="20220527 17:10:38.846"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${aa}</var>
+<arg>//div[@class="yuRUbf"]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20220527 17:10:38.873" level="INFO">${aa} = []</msg>
+<status status="PASS" starttime="20220527 17:10:38.847" endtime="20220527 17:10:38.873"/>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<arg>${file}</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20220527 17:10:38.876" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\Kushal Raju\PycharmProjects\Robot framework\Textfile.txt"&gt;C:\Users\Kushal Raju\PycharmProjects\Robot framework\Textfile.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220527 17:10:38.873" endtime="20220527 17:10:38.876"/>
+</kw>
+<for flavor="IN">
+<var>${el}</var>
+<value>@{aa}</value>
+<iter>
+<var name="${el}"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${el}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220527 17:10:38.877" endtime="20220527 17:10:38.877"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220527 17:10:38.877" endtime="20220527 17:10:38.877"/>
+</kw>
+<kw name="Append To File" library="OperatingSystem">
+<arg>${file}</arg>
+<arg>${text}</arg>
+<doc>Appends the given content to the specified file.</doc>
+<status status="NOT RUN" starttime="20220527 17:10:38.877" endtime="20220527 17:10:38.877"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:10:38.877" endtime="20220527 17:10:38.877"/>
+</iter>
+<status status="NOT RUN" starttime="20220527 17:10:38.876" endtime="20220527 17:10:38.877"/>
+</for>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Automatic_screenshot.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220527 17:10:39.023" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Automatic_screenshot.png"&gt;&lt;img src="Automatic_screenshot.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220527 17:10:38.877" endtime="20220527 17:10:39.023"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220527 17:10:39.026" endtime="20220527 17:10:39.027"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220527 17:10:39.027" endtime="20220527 17:10:41.380"/>
+</kw>
+<status status="PASS" starttime="20220527 17:10:29.730" endtime="20220527 17:10:41.382"/>
+</test>
+<status status="PASS" starttime="20220527 17:10:29.438" endtime="20220527 17:10:41.387"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc1">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
