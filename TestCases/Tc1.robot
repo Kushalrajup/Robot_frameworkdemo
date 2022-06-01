@@ -1,6 +1,5 @@
 *** Settings ***
 Library  SeleniumLibrary
-Library    XML
 Library    OperatingSystem
 
 *** Variables ***
